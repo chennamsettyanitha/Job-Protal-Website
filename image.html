@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings Carousel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .job-list {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 10px;
+        }
+        .job-card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            position: relative;
+            flex-shrink: 0;
+        }
+        .job-header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+        }
+        .job-badge {
+            background: white;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            background: white;
+            padding: 5px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .job-title {
+            font-size: 18px;
+            color: #333;
+            margin: 15px 0 5px;
+        }
+        .company-name {
+            font-size: 14px;
+            color: #666;
+        }
+        .job-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .apply-button {
+            background: #2575fc;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Jobs</h2>
+            <a href="#">View all →</a>
+        </div>
+        <div class="job-list">
+            <div class="job-card">
+                <div class="job-header">
+                    <span class="job-badge">In Office</span>
+                    <img src="icbank.jpg" alt="ICICI Bank" class="company-logo">
+                </div>
+                <div class="job-content">
+                    <h3 class="job-title">Relationship Manager</h3>
+                    <p class="company-name">ICICI Bank</p>
+                </div>
+                <div class="job-footer">
+                    <span class="views">👁️ 11 Views</span>
+                    <span class="days-left">⏳ 8 months left</span>
+                </div>
+            </div>
+            <div class="job-list">
+                <div class="job-card">
+                    <div class="job-header">
+                        <span class="job-badge">In Office</span>
+                        <img src="tred.jpg" alt="ICICI Bank" class="company-logo">
+                    </div>
+                    <div class="job-content">
+                        <h3 class="job-title">Business Development Executive</h3>
+                        <p class="company-name">Tred+</p>
+                    </div>
+                    <div class="job-footer">
+                        <span class="views">👁️ 11 Views</span>
+                        <span class="days-left">⏳ 8 months left</span>
+                    </div>
+                </div>
+                <div class="job-list">
+                    <div class="job-card">
+                        <div class="job-header">
+                            <span class="job-badge">In Office</span>
+                            <img src="Nxt.jpg" alt="ICICI Bank" class="company-logo">
+                        </div>
+                        <div class="job-content">
+                            <h3 class="job-title">System Administrator / Engineer</h3>
+                            <p class="company-name">Nxt Skills</p>
+                        </div>
+                        <div class="job-footer">
+                            <span class="views">👁️ 11 Views</span>
+                            <span class="days-left">⏳ 8 months left</span>
+                        </div>
+                    </div>
+            <div class="job-card">
+                <div class="job-header" style="background: linear-gradient(to right, #ff7eb3, #ff758c);">
+                    <span class="job-badge">In Office</span>
+                    <img src="swiggy.jpg" alt="Swiggy" class="company-logo">
+                </div>
+                <div class="job-content">
+                    <h3 class="job-title">Business Analyst</h3>
+                    <p class="company-name">Swiggy</p>
+                </div>
+                <div class="job-footer">
+                    <span class="views">👁️ 18 Views</span>
+                    <span class="days-left">⏳ 1 month left</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job</title>
+    <link rel="stylesheet" href="Apply.css">
+</head>
+<body>
+    <header>
+        <h1>Apply for Job</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="file:///C:/Users/Anith/OneDrive/Desktop/job%20portal/job.html">Jobs</a></li>
+                <li><a href="file:///C:/Users/Anith/OneDrive/Desktop/job%20portal/post%20a%20job.html">post a job</a></li>
+                <li><a href="file:///C:/Users/Anith/OneDrive/Desktop/job%20portal/about%20page.html">About us</a></li>
+                <li><a href="file:///C:/Users/Anith/OneDrive/Desktop/job%20portal/contact.html">contact </a></li>
+                <li><a href="file:///C:/Users/Anith/OneDrive/Desktop/job%20portal/login%20.html">Login</a></li>
+                <li><a href="file:///C:/Users/Anith/OneDrive/Desktop/job%20portal/register.html">Register</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section class="apply-container">
+        <form id="applyForm" class="job-form">
+            <h2>Job Application</h2>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea id="coverLetter" name="coverLetter" rows="5" required></textarea>
+
+            <label for="resume">Upload Resume (PDF):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+            <button type="submit">Submit Application</button>
+            
+        </form>
+
+        <div id="message"></div>
+    </section>
+
+    <script src="apply.js"></script>
+</body>
+</html>
