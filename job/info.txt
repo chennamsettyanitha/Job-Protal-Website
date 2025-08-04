@@ -1,0 +1,34 @@
+
+	***************ONLINE JOB PORTAL***********************
+
+project structure:
+
+		web/
+		├── .env
+		├── app.js
+                ├── admin.js
+                ├── users.js 
+                ├── package-lock.json
+                ├── package.json
+		├── models/
+		│   └── app.js
+		├── public/
+		│   ├── login.html
+		│   └── register.html
+                |    |___job.html
+                |    |___index.html
+                |    |___index.css
+                |    |___index.js
+                |    |___apply.html
+                |    |___contact.html
+                |    |___about page.html
+                |    |___apply.js
+                |    |___job portal.js
+                
+                  
+
+>>> npm init -y : for initialize node.js 
+>>>npm install express body-parser mongoose dotenv bcrypt : for installing requred dependencies
+>>>mongod : for running the mongodb (in mongodb shell)
+>>>node createAdmin.js #run for atleast once 
+>>>node app.js : to run the project
